@@ -1,12 +1,15 @@
-function loadAlert() {
-   alert("Alert");
-};
 window.onload = function(){
-    loadAlert();
-};
-function countChars(){
-    return document.getElementById("charCount").value.length;
-};
-function fromTextArea(){
-    document.getElementById("textarea").innerHTML = document.getElementById("charCount").value;
-};
+    alert("Alert")
+}
+function showPopUpText() {
+    alert(document.getElementById("PopUpText").value)
+}
+
+let x = document.getElementById("userInput")
+function inputCharLengthCount(){
+    return x.value.length
+}
+
+function reportUserInputToHtml(){
+    document.getElementById("textarea").innerHTML = x.value
+}

@@ -18,17 +18,17 @@
         <div class="main">
             <p>#3 Type something then press Alert to see it :) </p><br>
             <input type="text" name="messageAlert" id="PopUpText"><br>         <br>
-            <input type="button" onclick="alert(document.getElementById('PopUpText').value);" value="See text!">
-
+            <input type="button" onclick="showPopUpText()" value="See text!">
+ 
             <p>#4 Type then press button to console.log number of characters </p><br>
-            <textarea rows="5" cols="50" id="charCount" onkeyup="fromTextArea(); console.log(countChars());"></textarea><br><br>
-            <input type="button" onclick="console.log(countChars());" value="Console.log count"><br>
+            <textarea rows="5" cols="50" id="userInput" onkeyup="reportUserInputToHtml(); console.log(inputCharLengthCount());"></textarea><br><br>
+            <input type="button" onclick="console.log(inputCharLengthCount());" value="Console.log count"><br>
 
             <p>#3 while user is typing</p>
             
             <p id="textarea"></p> 
 
         </div>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
