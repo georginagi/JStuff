@@ -6,7 +6,7 @@ function loadPage(pageID) {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("main").innerHTML = xhttp.responseText
+            document.getElementById("mm").innerHTML = xhttp.responseText
         }
     }
     
